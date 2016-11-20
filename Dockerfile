@@ -11,7 +11,9 @@ RUN \
   
 # Configure Supervisor
 RUN \
-  yum install supervisor
+  yum install python-setuptools && \
+  easy_install pip && \
+  pip install supervisor
   
 # supervisor base configuration
 ADD supervisord.conf /etc/supervisord.conf
