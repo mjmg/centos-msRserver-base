@@ -11,7 +11,7 @@ RUN \
   
 # Configure Supervisor
 RUN \
-  yum install python-setuptools && \
+  yum install -y python-setuptools && \
   easy_install pip && \
   pip install supervisor
   
