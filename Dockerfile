@@ -35,8 +35,9 @@ RUN \
   
 RUN \
   cd /tmp/MRS80LINUX && \
-  ./install.sh -a -d -p -u  && \
-  cd MRS80LINUX/DeployR/ && \
+  ./install.sh -a -d -p -u  
+RUN \  
+  cd /tmp/MRS80LINUX/DeployR/ && \
   tar -xzzf DeployR-Enterprise-Linux-8.0.5.tar.gz
   #cd deployrInstall/installFiles
   #./installDeployREnterprise.sh
