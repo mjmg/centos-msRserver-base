@@ -36,6 +36,10 @@ RUN \
 RUN \
   cd /tmp/MRS80LINUX && \
   ./install.sh -a -d -p -u  
+  cd MRS80LINUX/DeployR/
+  tar -xzzf DeployR-Enterprise-Linux-8.0.5.tar.gz
+  #cd deployrInstall/installFiles
+  #./installDeployREnterprise.sh
   
 # Add default root password with password r00tpassw0rd
 RUN \
@@ -47,6 +51,8 @@ RUN \
   echo "RUser:RUser" | chpasswd && \ 
   chmod -R +r /home/RUser 
   #chown -R RUser /usr/lib64/MRS80LINUX
+  
+  
   
 # default command
 CMD ["/usr/bin/Revo64"]
