@@ -46,7 +46,7 @@ RUN \
   useradd RUser && \
   echo "RUser:RUser" | chpasswd && \ 
   chmod -R +r /home/RUser && \ 
-  chown -R RUser:dev /usr/lib64/MRS80LINUX
+  chown -R RUser /usr/lib64/MRS80LINUX
   
 # default command
 CMD ["/usr/bin/Revo64"]
