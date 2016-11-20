@@ -55,4 +55,4 @@ RUN \
   
   
 # default command
-CMD ["/usr/bin/Revo64"]
+CMD ["/bin/bash"]
