@@ -14,7 +14,7 @@ RUN \
   yum install supervisor
   
 # supervisor base configuration
-ADD supervisord.conf /etc/supervisor/supervisord.conf
+ADD supervisord.conf /etc/supervisord.conf
 
 # default command
 CMD ["/bin/bash"]
